@@ -1,0 +1,10 @@
+registry:
+   url: https://registry.local:5000/v2
+   name: egistry.local:5000
+   readonly: false
+   delete:
+     enabled: true
+   auth:
+     enabled: true
+     key: /certs/live/egistry.local/privkey.pem
+     issuer: test
