@@ -22,7 +22,6 @@ assert nginx.status == 'running'
 # print(nginx_cfg.output.decode())
 assert 'server_name _;' in nginx_cfg.output.decode()
 assert "error_log /proc/self/fd/2" in nginx_cfg.output.decode()
-assert "location = /.well-known/acme-challenge/" in nginx_cfg.output.decode()
 assert 'HTTP/1.1" 500' not in nginx.logs()
 
 # test restart
