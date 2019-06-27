@@ -30,11 +30,13 @@ nginx.restart()
 time.sleep(3)
 assert nginx.status == 'running'
 
-# Symfony PHP
-php = client.containers.get('registry')
-assert php.status == 'running'
-# print(php_conf.output.decode())
+app = client.containers.get('registry')
+assert app.status == 'running'
+
+web = client.containers.get('registry-web')
+assert web.status == 'running'
+
 response = requests.get("http://localhost")
 assert response.status_code == 200
 print(response.text)
-assert 'Welcome to the famous five-minute registry installation process!' in response.text
+#assert '' in response.text
