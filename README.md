@@ -36,6 +36,12 @@ $ python tests.py
 ```
 
 
+## Quick deployment to cloud
+##### Amazon AWS, Digital Ocean, Hetzner and others
+[<img src="https://img.shields.io/badge/quick%20deploy-%40try.direct-brightgreen.svg">](https://try.direct/server/user/deploy/InJlZ2lzdHJ5fDZ8MzIi.EIJLoA.-NyS4DE9LucPVr9WaQzHZTnbmvE/)
+
+
+
 ## Contributing
 
 
